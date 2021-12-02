@@ -74,7 +74,7 @@ header a:hover{
 .videoWrapper {
   position: sticky;
   width: 100%;
-  padding-bottom: calc(var(--aspect-ratio, .5625) * 100%);
+  padding-bottom: calc(50%);
 }
 .videoWrapper iframe {
   position: absolute;
@@ -145,6 +145,49 @@ footer{
     cursor: pointer;
 }
 
-img{
-  padding: 20px;
+.ex1.image {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.image a {
+    display: inline-block;
+    position: relative;
+}
+
+/* Gets rid of the extra white space that follows an inline element*/
+.image img {
+    vertical-align: bottom;
+}
+
+/* Creates the play arrow motif */
+.image .play {
+    position:absolute;
+    width:50px;
+    height:50px;
+    border:3px solid #fff;
+    top:50%;
+    right:50%;
+    margin:-28px;
+    border-radius:30px;
+    box-shadow:1px 1px 2px rgba(0,0,0,.2);
+    pointer-events: none;
+}
+.image .play span {
+    position:absolute;
+    width:0;
+    height:0;
+    border-top:12px solid transparent;
+    border-bottom:12px solid transparent;
+    border-left:20px solid #fff;
+    top:10px;
+    left:15px;
+    pointer-events: none;
+}
+
+/* Extra style for demo */
+.image {
+    margin-bottom: 2.00em;
+    outline: 1px solid blue;
 }
