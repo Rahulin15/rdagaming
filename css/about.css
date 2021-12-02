@@ -131,6 +131,7 @@
   left: 30px;
   bottom: 54px;
   overflow: hidden;
+  color: #000;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: all 1.2s;
@@ -1247,4 +1248,8 @@ h1,
 h2,
 h3 {
   font-weight: 200;
+}
+
+.page-header h1 small{
+  color: #fff;
 }
